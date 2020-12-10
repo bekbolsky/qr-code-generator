@@ -1,7 +1,7 @@
 import segno
 
 
-with open("edunews_links.txt") as f:
+with open("links.txt") as f:
     list_of_links = f.read().splitlines()
     # print(list_of_links, "\n")
 
@@ -21,6 +21,6 @@ for i in range(len(list_of_links)):
     print("QR code version and error correction level: ", qr.designator)
     print()
 
-# (46, 55, 65, 255)  edunews diplom
-# (112, 113, 103, 255)  edunews algys hat
+# (46, 55, 65, 255)
+# (112, 113, 103, 255)
 # (23, 54, 93) word blue

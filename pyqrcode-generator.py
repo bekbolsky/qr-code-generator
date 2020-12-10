@@ -1,13 +1,13 @@
 import pyqrcode as pqr
 
 
-with open("edunews_links.txt", "r") as infa:
+with open("links.txt", "r") as infa:
     linki = infa.read().splitlines()
 
 for i in range(len(linki)):
     qr = pqr.create(linki[i], error="H")
     qr.png(
-        "edunewskz_" + str(i + 1) + ".png",
+        "qrcode_" + str(i + 1) + ".png",
         scale=8,
         module_color=(46, 55, 65, 255),
         background=(255, 255, 255, 0),
